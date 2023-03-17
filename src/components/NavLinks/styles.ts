@@ -23,7 +23,6 @@ export const Container = styled.nav<NavLinksProps>`
         color: #333;
 
         font-size: ${props => props.direction === 'row' ? '14px' : '16px'};
-        text-decoration: underline;
       }
     }
   

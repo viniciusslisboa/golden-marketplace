@@ -1,9 +1,9 @@
 import { Container } from './styles';
 
-export function TopHeader() {
+export function CartMenu() {
   return (
     <Container>
-      <a href='#'>Entrar</a>
+      cart
     </Container>
   );
 }

@@ -18,7 +18,7 @@ const slides = [
   },
   {
     id: 2,
-    title: "Compra segura. Seus dados estão a salvo.",
+    title: "Compra segura. Seus dados intactos.",
     icon: <CCIcon />
   },
   {

@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
-
-  position: fixed;
   left: 0;
   bottom: 0;
 
@@ -11,6 +8,7 @@ export const Container = styled.div`
   color: #fff;
 
   padding: 24px;
+  font-size: 12px;
 
   .copyright {
     display: flex;
@@ -18,8 +16,8 @@ export const Container = styled.div`
     gap: 4px;
 
     h3 {
-      font-size: 16px;
-    }
+      font-size: 12px
+    }  
   }
  
 `;

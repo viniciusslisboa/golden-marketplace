@@ -21,7 +21,6 @@ export const MenuContainer = styled.aside<MenuContainerProps>`
 
   .div-aside {
     padding: 24px;
-
     .primary {
       width: 100%;
       padding: 16px;
@@ -31,24 +30,22 @@ export const MenuContainer = styled.aside<MenuContainerProps>`
       color: #fff;
       cursor: pointer;
   }
-
     h1 {
       font-size: 32px;
       margin: 0;
     }
   }
-
 `;
 
 export const MenuHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin-bottom: 32px;
-
   button {
     border: none;
     cursor: pointer;
   }
 `;
+
+

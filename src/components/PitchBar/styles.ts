@@ -6,6 +6,10 @@ export const Container = styled.div`
   justify-content: center;
   padding-bottom: 24px;
 
+  @media screen and (min-width: 320px) and (max-width: 375px) {
+    font-size: 14px;
+  }
+
   .mySwiper {
     width: 100%;
     padding: 16px;

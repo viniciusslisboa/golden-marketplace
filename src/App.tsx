@@ -3,11 +3,10 @@ import GlobalStyles from './styles/global'
 import { MenuContext, MenuProvider } from "./context/MenuContext"
 
 function App() {
-
   return (
     <MenuProvider>
       <MenuContext.Consumer>
-        {({ isMenuOpen, handleToggleMenuOpen }) => (
+        {({ isMenuOpen }) => (
           <>
             <GlobalStyles isMenuOpen={isMenuOpen} />
             <Layout />

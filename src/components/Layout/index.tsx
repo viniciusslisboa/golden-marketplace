@@ -6,6 +6,7 @@ import { Header } from '../Header';
 import { Overlay } from '../Overlay';
 import { PitchBar } from '../PitchBar';
 import { Products } from '../Products';
+import { TopHeader } from '../TopHeader';
 import { Container } from './styles';
 
 export function Layout() {
@@ -13,6 +14,7 @@ export function Layout() {
 
   return (
     <>
+      <TopHeader />
       <Header onToggleMenuOpen={handleToggleMenuOpen} />
       <PitchBar />
       <Products />

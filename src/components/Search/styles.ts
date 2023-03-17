@@ -7,10 +7,14 @@ export const DesktopContainer = styled.div`
       justify-content: center;
       align-items: center;
 
-      margin-left: 24px;
+      margin: 0 24px;
   }
   
   display: none;
+
+  .input-search:hover {
+    background-color: #ccc;
+  }
 
   .input-search {
     width: 100%;

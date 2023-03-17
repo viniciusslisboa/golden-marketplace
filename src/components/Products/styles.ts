@@ -6,10 +6,11 @@ export const Container = styled.div`
   display: grid;
   place-items: center;
   place-content: center;
-  gap: 12px;
+  gap: 24px;
   padding: 24px;
 
   margin-bottom: 148px;
+
   
   @media screen and (min-width: 320px) {
     grid-template-columns: repeat(1, 1fr);
@@ -33,11 +34,15 @@ export const Container = styled.div`
   @media screen and (min-width: 1560px) {
     padding: 0 400px;
   }
-`;
+  @media screen and (min-width: 1700px) {
+    padding: 0 500px;
+  }
+  `;
 
 export const ProductItem = styled.div`
   width: 100%;
-
+  cursor: pointer;
+  
   .img { 
     padding: 64px;
 
