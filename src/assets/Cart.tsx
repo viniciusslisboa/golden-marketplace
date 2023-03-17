@@ -7,7 +7,7 @@ interface CartProps {
 
 export function Cart({ onClick }: CartProps) {
   return (
-    <button type="button" onClick={onClick} style={defaultStyle}>
+    <button type="button" onClick={onClick} style={{ marginLeft: '24px', ...defaultStyle }}>
       <img src={cart} alt="cart" />
     </button>
   );

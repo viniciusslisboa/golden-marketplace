@@ -1,1 +1,1 @@
-export const defaultStyle = { cursor: 'pointer', border: 'none', background: 'transparent' }
+export const defaultStyle = { cursor: 'pointer', border: 'none', background: 'transparent', padding: 0, margin: 0 }

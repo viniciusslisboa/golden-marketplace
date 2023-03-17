@@ -3,12 +3,13 @@ import { defaultStyle } from './styles/global';
 
 interface MenuProps {
   onClick: () => void;
+  visible: boolean;
 }
 
-export function Menu({ onClick }: MenuProps) {
+export function Menu({ onClick, visible }: MenuProps) {
   return (
-    <button type="button" onClick={onClick} style={defaultStyle}>
+    <button type="button" onClick={onClick} style={{ display: visible ? "flex" : "none", ...defaultStyle }}>
       <img src={menu} alt="menu" />
-    </button>
+    </button >
   );
 }

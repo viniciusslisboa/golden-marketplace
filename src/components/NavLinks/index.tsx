@@ -1,8 +1,13 @@
 import { Container } from "./styles";
 
-export function NavLinks() {
+interface NavLinksProps {
+  direction: 'column' | 'row'
+}
+
+
+export function NavLinks({ direction }: NavLinksProps) {
   return (
-    <Container>
+    <Container direction={direction}>
       <ul>
         <li><a href="#">Sneakers</a></li>
         <li><a href="#">T-Shirts</a></li>

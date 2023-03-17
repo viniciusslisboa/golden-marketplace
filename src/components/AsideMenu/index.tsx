@@ -16,7 +16,7 @@ export function AsideMenu() {
           <Exit onClick={handleToggleMenuOpen} />
         </MenuHeader>
 
-        <NavLinks />
+        <NavLinks direction='column' />
 
         <button className='primary'>Entrar</button>
       </div>

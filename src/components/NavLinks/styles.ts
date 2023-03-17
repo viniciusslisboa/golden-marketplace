@@ -1,26 +1,28 @@
 import styled from "styled-components";
 
+interface NavLinksProps {
+  direction: 'column' | 'row'
+}
 
-export const Container = styled.nav`
+export const Container = styled.nav<NavLinksProps>`
 
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: left;
-    margin: 0 0 32px 16px;
+    margin: ${props => props.direction === "column" ? "0 0 32px 16px" : '0'};
 
     ul {
       list-style: none;
       display: flex;
-      flex-direction: column;
+      flex-direction: ${props => props.direction};
       gap: 18px;
       padding: 0;
+      margin: 0;
 
       li > a {
-        text-decoration: none;
         color: #333;
 
-        font-size: 20px;
+        font-size: ${props => props.direction === 'row' ? '14px' : '16px'};
         text-decoration: underline;
       }
     }

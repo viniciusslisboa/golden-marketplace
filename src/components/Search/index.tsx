@@ -1,10 +1,18 @@
-import { SearchIcon } from '../../assets/SearchIcon';
-import { Container } from './styles';
+import { DesktopContainer, MobileContainer } from './styles';
 
-export function Search() {
+
+export function DesktopSearch() {
   return (
-    <Container>
+    <DesktopContainer>
       <input type="text" className='input-search' placeholder="Buscar" />
-    </Container>
+    </DesktopContainer>
+  );
+}
+
+export function MobileSearch() {
+  return (
+    <MobileContainer>
+      <input type="text" className='input-search' placeholder="Buscar" />
+    </MobileContainer>
   );
 }
