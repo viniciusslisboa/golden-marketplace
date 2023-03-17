@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import { CartContext } from '../../context/CartContext';
 import { MenuContext } from '../../context/MenuContext';
 import { Footer } from '../Footer';
 
@@ -11,15 +12,19 @@ import { Container } from './styles';
 
 export function Layout() {
   const { isMenuOpen, handleToggleMenuOpen } = useContext(MenuContext)
+  const { isCartOpen, handleToggleCartOpen } = useContext(CartContext)
 
   return (
     <>
       <TopHeader />
-      <Header onToggleMenuOpen={handleToggleMenuOpen} />
+      <Header onToggleMenuOpen={handleToggleMenuOpen} onToggleCartOpen={handleToggleCartOpen} />
       <PitchBar />
       <Products />
       <Footer />
       {isMenuOpen && (
+        <Overlay />
+      )}
+      {isCartOpen && (
         <Overlay />
       )}
     </>

@@ -1,9 +1,23 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
-export const CartContext = createContext({})
+interface CartProps {
+  isCartOpen: boolean;
+  handleToggleCartOpen: () => void;
+}
 
-export function CartProvider() {
+
+export const CartContext = createContext({} as CartProps)
+
+export function CartProvider({ children }: any) {
+  const [isCartOpen, setIsCartOpen] = useState(false)
+
+  function handleToggleCartOpen() {
+    setIsCartOpen(prevState => prevState === false ? true : false)
+  }
+
   return (
-    <h1>contde</h1>
+    <CartContext.Provider value={{ isCartOpen, handleToggleCartOpen }}>
+      {children}
+    </CartContext.Provider>
   );
 }

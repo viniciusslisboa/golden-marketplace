@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 interface GlobalProps {
   isMenuOpen: boolean;
+  isCartOpen: boolean;
 }
 
 export default createGlobalStyle<GlobalProps>`
@@ -15,6 +16,6 @@ export default createGlobalStyle<GlobalProps>`
     box-sizing: border-box;
     font-family: sans-serif;
 
-    overflow: ${({ isMenuOpen }) => isMenuOpen ? "hidden" : "unset"};
+    overflow: ${({ isMenuOpen, isCartOpen }) => isMenuOpen || isCartOpen ? "hidden" : "unset"};
   }
 `;
